@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>вы не робот..?</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-rose-200 selection:bg-rose-300 selection:text-rose-900">
+    <main class="grid justify-items-center">
+        <p class="text-xl font-bold p-6 text-center text-pink-400 font-mono">Вы не робот?</p>
+        <p class="text-center font-medium p-3 text-l text-pink-500 font-mono">Привет! Я компьютер и я ищу свою маму😔</p>
+        <!--<p class="text-center font-medium p-3 text-pink-500 font-mono">Ты случайно не моя мама?</p>-->
+        <div class="flex">
+            <button onclick="document.getElementById('message').innerHTML = 'Ты моя мама?'" class="rounded-l-lg border border-rose-500 px-3 hover:bg-rose-500 focus:ring focus:ring-rose-300">Я робот</button>
+            <button onclick="document.getElementById('message').innerHTML = '😔'" class="rounded-r-lg border border-rose-500 px-3 hover:bg-rose-500 focus:ring focus:ring-rose-300">Я не робот</button>
+        </div>
+        <div id="message" class="text-center font-medium p-3 text-pink-500 font-mono"></div>
+    </main>
+</body>
+</html>
